@@ -8,7 +8,7 @@ pip install ultralytics
 pip install pillow
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
-If you're using a PC then you need to install ** CUDA version 11.8 ** and install ** pyenv ** to make life easier
+If you're using a PC then you need to install **CUDA version 11.8** and install **pyenv** to make life easier
 
 first run shell as administrator and then enter this command
 
