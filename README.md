@@ -1,13 +1,41 @@
-# Installed Python Libraries
-
-This document lists the Python libraries installed in this project.
-
-## Python Version
-
-This project uses Python version 3.10.11. Make sure you have this version installed to ensure compatibility with the installed libraries.
+# This project uses Python version 3.10.11
 
 ## Installed Libraries
+You need to run these commands on the Raspberry Pi
+```sh
+python -m pip install --upgrade pip
+pip install ultralytics
+pip install pillow
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+If you're using a PC then you need to install ** CUDA version 11.8 ** and install ** pyenv ** to make life easier
 
+first run shell as administrator and then enter this command
+
+```sh
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+```
+
+now install python 3.10.11
+``sh
+pyenv install 3.10.11
+```
+
+wait for the download to finish and then do
+```sh
+pyenv global 3.10.11
+```
+
+and then install the following libraries
+
+```sh
+python -m pip install --upgrade pip
+pip install ultralytics
+pip install pillow
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+# List of installed libraries
 To see the list of installed libraries, run the following command in your terminal:
 
 ```sh
